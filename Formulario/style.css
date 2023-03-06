@@ -1,0 +1,156 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background: black;
+  
+}
+/*/////.banner*/
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+}
+
+/*-----------------------*/
+/*///////////// main///////*/
+main{
+    margin-top: 50px;
+    height: 600px;
+    margin: 10px;
+}
+.dados{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.bot{
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 60px;
+   
+}
+
+.botao{
+    border-radius: 60px;
+
+}
+.etiqueta {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(1, 1, 8);
+    margin-left: 1em;
+}
+
+.escrita {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 24px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125%;
+}
+
+.campo {
+    margin: .6em 3em .6em 0;
+
+}
+
+.botao {
+    background: orange;
+    padding: 1em 4em;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    float: centa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------fim do main---------*/
+/* /////// footer /////////// */
+.rodape{
+    width: 100%;
+    padding: 10px;
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.rodape_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+   
+}
+    
+.lista_rodape{
+    padding: 0%;
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* - -------- fim do footer ----------- */ 
+/* para apenas imprimir o formulario */
+.print{
+    display: none;
+}
+
+@media print{
+    .rodape{
+        display: none;
+    }
+    .cabeçalho{
+        display: none;
+    }
+    .print{
+        display: block;
+    }
+
+    .dados{
+        display: none;
+    }
+}
+/*----------------------*/

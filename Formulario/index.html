@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: black; color:white;" >
+        <a class="navbar-brand" href="#"><img src="img/_NO _API12 .png" width="100" height="100" class="d-inline-block align-top" alt="" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação" >
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+          <ul class="navbar-nav" >
+            <li class="nav-item active"  >
+              <a class="nav-link" href="../HOME API/index.html" style="color: white;" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apiCep/.html" style="color: white;">CEP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../dolar/indexdolar.html" style="color: white;">DOLAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../TEtsuo 001/TEstuo  api/index.html" style="color: white;">API-FAKE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../FAKE_2/index.html" style="color: white;">API-FAKE2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="../clima/API CLIMA/index.html" style="color: white;" >CLIMA</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <section class="banner">
+        <h2 class="banner__titulo">Formulário</h2>
+    </section>
+
+    <main >
+        <div class="dados"  >
+
+            <div class="campo">
+                <Label class="etiqueta">Nome</Label>
+
+                <input type="text" id="nome" class="escrita"> <br>
+            </div>
+
+
+            <div class="campo">
+                <Label class="etiqueta">Sobrenome</Label>
+
+                <input type="text" id="sobrenome" class="escrita"><br>
+            </div>
+
+            <div class="campo">
+                <Label class="etiqueta">Idade</Label>
+
+                <input type="text" id="idade" class="escrita"><br>
+            </div>
+
+            <div class="campo">
+                <Label class="etiqueta">E-mail</Label>
+
+                <input type="email" id="email" class="escrita"><br>
+            </div>
+            <div class="bot">
+                <button class="botao" onclick="guardaFormulario();">Enviar</button>
+            </div>
+        </div>
+    
+
+        <div class="print">
+            <h2>Nome: <span id="nome_a"></span></h2>
+            <p>sobrenome: <span id="sobrenome_a"></span></p>
+            <p>Idade: <span id="idade_a"></span></p>
+            <p>E-mail: <span id="email_a"></span></p>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <hr>
+
+        <h2 class="rodape_titulo">NO_API</h2>
+
+        <ul class="lista_rodape">
+
+            <li class="rodape-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="rodape-item">
+                <a class="nav-link" href="#">CEP</a>
+              </li>
+              <li class="rodape-item">
+                <a class="nav-link" href="#">DOLAR</a>
+              </li>
+              <li class="rodape-item">
+                <a class="nav-link " href="#">API-FAKE</a>
+              </li>
+              <li class="rodape-item">
+                  <a class="nav-link " href="#">CLIMA</a>
+                </li>
+        </ul>
+
+        
+    
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</body>
+</html>

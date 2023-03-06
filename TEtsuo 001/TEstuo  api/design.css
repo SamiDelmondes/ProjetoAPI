@@ -1,0 +1,129 @@
+@font-face {
+    font-family: allcan ;
+    src: url(Font/all/AllcanDEMORegular.ttf);
+
+}
+*{
+    
+    margin-top: 10px;
+    text-align: center;
+    color:#ffffff;
+    font-family: allcan;
+    
+}
+
+#dados{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ #nome1, #nome2, #nome3, #nome4, #nome5, #nome6{
+    padding: 0;
+    border: 0;
+} 
+img{
+    width: 150px ;
+    height: 150px ;
+    padding: 5px;
+    margin: 0;
+}
+
+hr{
+    background-color: white;
+}
+ /*img*/
+
+#art1{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bnt{
+    text-decoration: none;
+}
+
+.btn{
+    color: rgb(255, 255, 255);
+    transition: .1s;
+}
+
+.btn:hover{
+    
+    background: rgb(12, 78, 104);
+    box-shadow: 0px 0px 10px rgb(12, 78, 104) , 0 0 10px rgb(12, 78, 104) , 0 0 10px rgb(12, 78, 104) , 0 0 10px rgb(12, 78, 104) ;
+    transition-delay: 0s;
+    
+}
+
+#atualiza span{
+    display: block;
+} 
+
+/*-------------*/
+
+
+
+/*efeito*/
+#butat{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#atualiza{
+    text-decoration: none;
+}
+
+#atualiza{
+
+    color: rgb(255, 255, 255);
+   
+
+    transition: .2s;
+}
+
+#atualiza:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgb(12, 78, 104);
+
+    box-shadow:  0 0 10px rgb(12, 78, 104), 0 0 15px rgb(12, 78, 104), 0 0 30px rgb(12, 78, 104);
+
+    transition-delay: 0s;
+    width: 15%;
+    height: 15%;
+}
+
+#atualiza span{
+    
+    display: block;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

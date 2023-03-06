@@ -1,0 +1,25 @@
+{   
+    "AA":{
+        "name": "Banda: highly suspect",
+        "album": "Album: MCID/",
+        "style": "Genero: ROCK",
+        "price": "Valor: R$44.00",
+        "imagem": "<img src='img/mcid.jpg' width='100px'>"
+    },
+
+    "AB":{
+        "name": "charlie brown jr.",
+        "album": "Album: Imunidade Musical/",
+        "style": "ROCK",
+        "price": "R$50.00",
+        "imagem": "<img src='img/cbj.jpg' width='100px'>"
+        },
+
+    "AC":{
+        "name": "Blink-182",
+        "album": "Album:Enema of the State/",
+        "style": "ROCK",
+        "price": "R$34.00",
+        "imagem": "<img src='img/blink.jpg' width='100px'>"
+        }
+}

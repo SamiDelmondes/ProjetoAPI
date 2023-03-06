@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-1" id="song-1">
+      <div id="imagem_AA"></div>
+    </label>
+    <label class="card" for="item-2" id="song-2">
+      <div id="imagem_AB"></div>
+    </label>
+    <label class="card" for="item-3" id="song-3">
+      <div id="imagem_AC"></div>
+    </label>
+  </div>
+  <div class="player">
+    <div class="upper-part">
+    
+      <div class="info-area" id="test">
+        <label class="song-info" id="song-info-1">
+          <div class="title" id="nome_AA"></div>
+          <div class="sub-line">
+            <div class="subtitle" id="disco_AA"></div>
+            <div class="subtitle" id="estilo_AA"></div>
+            <div class="time" id="preco_AA"></div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-2">
+          <div class="title" id="nome_AB"></div>
+          <div class="sub-line">
+            <div class="subtitle" id="disco_AB"></div>
+            <div class="subtitle" id="estilo_AB"></div>
+            <div class="time" id="preco_AB">4.05</div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-3">
+          <div class="title" id="nome_AC"></div>
+          <div class="sub-line">
+            <div class="subtitle" id="disco_AC"></div>
+            <div class="subtitle" id="estilo_AC"></div>
+            <div class="time" id="preco_AC"></div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

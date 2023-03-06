@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>Consumo API CEP</h1>
+        <legend>Endereço</legend>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" autocomplete="off">
+        <br>
+        <label for="rua">Rua</label>
+        <input type="text" id="rua" readonly>
+        <br>
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" readonly>
+        <br>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" readonly>
+        <br>
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" readonly>
+        <br>
+</body>
+    <script>
+        const preencherformulario = (endereço) =>{
+            document.getElementById("rua").valeu = endereço.logradouro;
+            document.getElementById("bairro").valeu = endereço.bairro;
+            document.getElementById("cidade").valeu = endereço.localidade;
+            document.getElementById("estado").valeu = endereço.ufc;
+
+        }
+            const cpfValido = (cep) =>{
+                if ( cep.lenght == 8){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+
+            const pesquisarCep = async () =>{
+                const cep = document.getElementById("cep").valeu;
+                const url = 'http://viacep.com.br/ws/${cep}/json/';
+                if(cepValido(cep)){
+                    const dados = await fetch(url);
+                    const endereço = await dados.json();
+                    preencherFormulario(endereço);
+                }
+            }
+        document.getElementById("cep").addEventListener("focusout",pesquisarCep);
+    </script>
+</html>

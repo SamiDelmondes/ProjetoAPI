@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="padding:0; background-color: black; display: flex; justify-content: center; align-items: center;">
+    <div class="container" >
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light" style=" width: 100%;">
+                    <a class="navbar-brand" href="#"><img src="Imagens/_NO _API12 .png" alt=""></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação" >
+                      <span class="navbar-toggler-icon" ></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="../../HOME API/index.html" style="color: white;">Home</a>
+                        <a class="nav-item nav-link" href="../../apiCep/teste.html" style="color: white;">CEP</a>
+                        <a class="nav-item nav-link" href="../../dolar/indexdolar.html" style="color: white;">DOLAR</a>
+                        <a class="nav-item nav-link" href="../../clima/API CLIMA/index.html" style="color: white;">CLIMA</a>
+                        <a class="nav-item nav-link" href="../../FAKE_2/index.html" style="color: white;">API-FAKE2</a>
+                        <a class="nav-item nav-link" href="../../Formulario/index.html" style="color: white;">FORMULARIO</a>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+
+            <div class="row"  >
+
+                <div class="col-sm" id="dados">
+                    <div id="A1">
+                        
+                        <hr>
+                        <div id="nome"></div>
+                        <div id="musica"></div>
+                        <div id="idade"></div>
+                        <video id="video" src="./midia/Jake.mp4"  autoplay controls  width="320" height="240"  loop ></video>
+                        <hr>
+
+                    </div>
+            
+
+                </div>
+                
+                <div class="col-sm" id="colun">
+                    <!-- linha 1 ---------->
+                    <div class="row" id="linha1">
+                        <div class="col-sm" id="art1">
+                            <div  id="nome1" class="btn"><img src="imagens/MarginalAlado.png" alt="" button  onclick="api1()"></button></div>
+                        </div>
+                        <div class="col-sm" id="art1">
+                            <div id="nome2" class="btn"> <img src="imagens/Mcid.png" alt="" button   onclick="api2()"></button></div>
+                        </div>
+                    </div>
+                    <!-- linha 2 ---------->
+                    
+                    <div class="row" id="linha2">
+                        <div class="col-sm" id="art1">
+                            <div id="nome3" class="btn" > <img src="imagens/avicci.png" alt="" button class="btn3"   onclick="api3()"></button></div>
+                        </div>
+                        <div class="col-sm" id="art1">
+                            <div id="nome4" class="btn"> <img src="imagens/Mac Miller.png" alt="" button class="btn4"   onclick="api4()"></button></div>
+                        </div>
+                    </div> 
+
+                    <!-- linha 3 ---------->
+                    <div class="row" id="linha3">
+                        <div class="col-sm" id="art1">
+                            <div id="nome5" class="btn" > <img src="imagens/malone.png" alt="" button class="btn5"   onclick="api5()"></button></div>
+                        </div>
+                        <div class="col-sm" id="art1">
+                            <div id="nome6" class="btn" > <img src="imagens/IDra.png" alt="" button class="btn6"   onclick="api6()"></button></div>
+                        </div>
+                    </div> 
+                          
+                </div>
+            </div>
+            <div class="row" id="butat"  >
+                <a type="button" id="atualiza" value="atualiza" onclick="window.location.reload()"><span></span><span></span><span></span><span></span>ATUALIZAR</a>
+            </div>
+            <div class="row" >
+                <footer id="sticky-footer" class="flex-shrink-0 py-4  text-white-50 " style="width: 100%; background-color: black;">
+                    <div class="container text-center justify-content-center">
+                      <small>Copyright &copy; No_API</small>
+                    </div>
+                  </footer>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
